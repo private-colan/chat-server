@@ -15,7 +15,7 @@ const options = {
 };
 
 const Schema = mongoose.Schema;
-mongoose.connect(MONGO_URL, options).then(r => {
+mongoose.connect(process.env.MONGO_URL, options).then(r => {
    console.log('MongoDB connected successfully');
 }).catch(r => {
    console.log(r);
