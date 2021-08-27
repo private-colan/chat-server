@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const chatSchema = require('./chatSchema.js');
-const { MONGO_URL } = require('../config.js');
+
 const options = {
    useNewUrlParser: true,
    useUnifiedTopology: true,
