@@ -17,7 +17,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
    cors: {
-      origin: ['http://localhost:9094','https://virtual-staff.colan.in'],
+      origin: ['*'],
       methods: ['GET', 'POST'],
    },
 });
